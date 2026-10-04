@@ -2,10 +2,10 @@
 'use client';
 
 import Link from 'next/link';
-import InstagramIcon from '@/components/icons/InstagramIcon';
-import WhatsAppIcon from '@/components/icons/WhatsappIcon';
-import PhoneIcon from '@/components/icons/PhoneIcon';
-import PinIcon from '@/components/icons/PinIcon';
+import InstagramIcon from '@/components/Icons/InstagramIcon';
+import WhatsAppIcon from '@/components/Icons/WhatsappIcon';
+import PhoneIcon from '@/components/Icons/PhoneIcon';
+import PinIcon from '@/components/Icons/PinIcon';
 import { brand, locations } from '@/data/menu';
 
 export default function Footer() {

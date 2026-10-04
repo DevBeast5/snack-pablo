@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import WhatsAppIcon from '@/components/icons/WhatsappIcon';
+import WhatsAppIcon from '@/components/Icons/WhatsappIcon';
 import { brand } from '@/data/menu';
 
 export default function Header() {

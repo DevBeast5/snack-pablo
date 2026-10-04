@@ -2,9 +2,9 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import PhoneIcon from '@/components/icons/PhoneIcon';
-import PinIcon from '@/components/icons/PinIcon';
-import WhatsAppIcon from '@/components/icons/WhatsappIcon';
+import PhoneIcon from '@/components/Icons/PhoneIcon';
+import PinIcon from '@/components/Icons/PinIcon';
+import WhatsAppIcon from '@/components/Icons/WhatsappIcon';
 import { locations } from '@/data/menu';
 
 export default function Locations() {

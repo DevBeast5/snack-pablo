@@ -3,7 +3,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import WhatsAppIcon from '@/components/icons/WhatsappIcon';
+import WhatsAppIcon from '@/components/Icons/WhatsappIcon';
 import ArrowIcon from '@/components/Icons/ArrowIcon';
 import { categories, menu, brand } from '@/data/menu';
 

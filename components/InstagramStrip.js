@@ -3,7 +3,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import InstagramIcon from '@/components/icons/InstagramIcon';
+import InstagramIcon from '@/components/Icons/InstagramIcon';
 import { brand } from '@/data/menu';
 
 const posts = [
