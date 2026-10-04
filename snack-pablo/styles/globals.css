@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+    /* Colors — unchanged */
+    --color-pablo-teal: #1A8A8E;
+    --color-pablo-teal-dark: #146F72;
+    --color-pablo-teal-light: #22A5AA;
+    --color-pablo-deep: #0B5F63;
+
+    --color-pablo-cream: #FAF7F2;
+    --color-pablo-cream-dark: #F0EBE3;
+
+    --color-pablo-yellow: #FFD84D;
+    --color-pablo-lime: #D9E56B;
+
+    --color-pablo-ink: #0F1417;
+
+    /* 👇 Fonts — swapped to Fraunces + Satoshi */
+    --font-sans: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Fraunces', Georgia, serif;
+
+    --letter-spacing-widest2: 0.3em;
+}
+
+body {
+    background: var(--pablo-cream);
+    color: var(--pablo-ink);
+    font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    font-variation-settings: 'SOFT' 50, 'WONK' 1;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #F0EDE8;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--pablo-teal);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--pablo-teal-dark);
+}
+
+/* Selection */
+::selection {
+    background: var(--pablo-teal);
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Dishes marquee — slower, more cinematic */
+@keyframes dishes-marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-33.333%); }
+}
+
+.animate-dishes-marquee {
+    animation: dishes-marquee 45s linear infinite;
+}
+
+.animate-dishes-marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes heroMarquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-25%); }
+}
+
+.animate-hero-marquee {
+    animation: heroMarquee 60s linear infinite;
+}
+
+.animate-hero-marquee:hover {
+    animation-play-state: paused;
+}
